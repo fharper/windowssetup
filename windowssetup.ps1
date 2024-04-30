@@ -18,3 +18,13 @@ choco install docker-desktop
 #
 choco install rufus
 
+#
+# Hyper-V Manager
+#
+# Windows Virtual machine monitor Manager
+#
+# https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
+#
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
+
